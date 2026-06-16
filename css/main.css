@@ -109,6 +109,16 @@ a.color1{
     color: #454545;
 }
 
+img{
+    object-fit: cover; 
+    transition: transform 0.9s ease;
+}
+
+img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 #container{
     width:1440px;
     margin:0 auto;
@@ -263,6 +273,10 @@ button.align1{
     width: 100%;
 }
 
+.user-blk .user-img img:hover{
+    transform: scale(1.5);
+}
+
 .explain-blk{
     display: flex;
     flex-direction: column;
@@ -369,6 +383,10 @@ input[type="submit"]{
     outline: none;
     border-radius: 8px;
     cursor: pointer;
+}
+
+#contact-right .cnt-img{
+    width: 508px;
 }
 
 /**********************/
