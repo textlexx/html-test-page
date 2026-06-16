@@ -71,7 +71,7 @@ a{
     width:1440px;
     margin:0 auto;
     padding-top:40px;
-    padding:56px 81px 500px 81px;
+    padding:56px 81px 0 81px;
 }
 
 #header{
@@ -243,7 +243,7 @@ footer{
     justify-content: space-between;
     border-top:1px solid #E6E6E6;
     margin-top:121px;
-    padding:49px 0 0 0;
+    padding:49px 0 59px 0;
 }
 
 #ftr-left{
