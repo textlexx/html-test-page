@@ -54,20 +54,47 @@
         
         <section id="contact-us">
             <div id="contact-left">
-                <form class="contact-form" action="./">
-                    <div class="input-group">
-                        <input type="text" id="name" name="name" placeholder="">
-                        <input type="text" id="lastname" name="lastname" placeholder="">
-                    </div>
+                <div id="cnt-left-inner">
+                    <h1 class="head-h">
+                        Contact us
+                    </h1>
 
-                    <input type="email" id="email" name="email">
+                    <h6 class="head-h color1">
+                        Subheading for description or instructions
+                    </h6>
 
-                    <input type="tel" id="tel" name="tel">
+                    <form class="base-form" action="./">
+                        <div class="input-group">
+                            <label>
+                                <span class="txt">First name</span>
+                                <input type="text" id="name" name="name" placeholder="Jane">
+                            </label>
+                            
+                            <label>
+                                <span class="txt">Last name</span>
+                                <input type="text" id="lastname" name="lastname" placeholder="Smitherton">
+                            </label>
+                        </div>
 
-                    <textarea name="message" id="message"></textarea>
+                        <label>
+                            <span class="txt">Email address</span>
+                            <input type="email" id="email" name="email" placeholder="email@janesfakedomain.net">
+                        </label>
 
-                    <input type="submit" id="send" name="send">
-                </form>
+                        <label>
+                            <span class="txt">Number</span>
+                            <input type="tel" id="tel" name="tel" placeholder="+380-ХХ-ХХ-ХХ-ХХХ">
+                        </label>
+
+                        <label>
+                            <span class="txt">Your message</span>
+                            <textarea name="message" id="message" 
+                            placeholder="Enter your question or message"></textarea>
+                        </label>
+
+                        <input type="submit" id="send" name="send" value="Submit">
+                    </form>
+                </div>
             </div>
 
             <div id="contact-right">
