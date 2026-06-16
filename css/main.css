@@ -85,10 +85,6 @@ span.color1{
     color: #828282;
 }
 
-a.color1{
-    color: #454545;
-}
-
 .head-h.align1{
     text-align: center;
 }
@@ -101,6 +97,16 @@ ul.list-none{
 
 a{
     text-decoration: none;
+    text-shadow: 0 0 0px rgba(52, 152, 219, 0);
+    transition: text-shadow 0.4s ease-in-out;
+}
+
+a:hover{
+    text-shadow: 0 8px 20px rgba(0, 0, 0);
+}
+
+a.color1{
+    color: #454545;
 }
 
 #container{
@@ -247,6 +253,7 @@ button.align1{
 }
 
 .user-blk .user-img{
+    display: block;
     width: 45px;
     height: 45px;
     margin-right: 16px;
@@ -275,6 +282,8 @@ button.align1{
 
 #contact-us{
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding:136px 0 0 0;
 }
 
