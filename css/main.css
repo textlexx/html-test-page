@@ -416,6 +416,10 @@ input[type="submit"]{
     margin-right: 4px;
 }
 
+#contact-right .cnt-img img{
+    width: 100%;
+}
+
 /**********************/
 
 #footer-section{
@@ -511,7 +515,7 @@ footer{
 
 @media (max-width:1440px) {
     #container{
-        width: 100%;
+        /*width: 100%;*/
     }
 }
 
@@ -529,7 +533,15 @@ footer{
         display: block;
         width: 51px;
         height: 31px;
+
+        /***************************
+        must be without this margin manipulation but in figma 
+        not accurate centration by top menu elements of website.
+        */
         margin:  0 29px 12px 0;
+        /***************************/
+        /*margin:0; <-- */
+
         padding: 0;
         background-color: transparent;
         background-color: initial;
@@ -592,6 +604,93 @@ footer{
         width: 100%;
         margin-bottom:36px;
         padding-bottom: 29px;
+    }
+
+    /**********************/
+
+    #contact-us{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 74px;
+        padding-bottom: 3px;
+    }
+
+    #contact-left{
+        width: 100%;
+        justify-content: start;
+    }
+
+    #contact-right{
+        width: 100%;
+        justify-content: start;
+    }
+
+    #contact-right .cnt-img{
+        margin:0 auto;
+    }
+
+    #contact-left{
+        padding-top:33px;
+    }
+
+    #cnt-left-inner h1{
+        text-align: center;
+        margin-bottom: 34px;
+    }
+
+    #cnt-left-inner h6{
+        /*By normal must be:*/
+        /*text-align: center;*/
+
+        margin-bottom: 41px;
+
+        /*But in figma not center align of this h6:*/
+        margin-left: 5px;
+    }
+
+    #cnt-left-inner{
+        width: 517px;
+        margin: 0 auto;
+    }
+
+    form .input-group{
+        display: block;
+    }
+
+    form .input-group label{
+        width: 100%;
+        margin-bottom: 27px;
+    }
+
+    textarea{
+        height: 162px;
+    }
+
+    input[type="submit"]{
+        height: 71px;
+        margin-top:-2px;
+    }
+
+    input[type="text"], 
+    input[type="email"], 
+    input[type="tel"],
+    textarea,
+    input[type="submit"]{
+        /*
+        Must be 100% width but in figma out block of inputs don`t match 
+        with width of self inputs
+        ********||**
+        ********\/**/
+        width: 506px;
+        /*Not accurate centration of website blocks in figma*/
+    }
+
+    #contact-us + #footer-section{
+        /*
+        Main page of website don't match with Contact page in figma by horizontal 
+        in footer.
+        */
+        padding-right: 62px;
     }
 
     /**********************/
