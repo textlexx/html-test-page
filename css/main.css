@@ -113,6 +113,13 @@ button{
     cursor: pointer;
 }
 
+a.btn,
+button.btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #container{
     width:1440px;
     margin:0 auto;
@@ -142,7 +149,7 @@ section{
     align-items: center;
 }
 
-#top-logo a{
+.top-logo a{
     display: block;
 }
 
@@ -167,10 +174,11 @@ section{
 
 }
 
+.btn-center{
+    text-align: center;
+}
+
 .btn-black{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 52px;
     line-height: 52px;
     border-radius: 8px;
@@ -186,7 +194,8 @@ section{
 
 .btn-menu,
 .btn-close,
-#top-nav-menu .top-logo{
+#top-nav-menu .top-logo,
+#top-right #top-nav-menu .btn-black{
     display: none;
 }
 
@@ -532,13 +541,13 @@ footer{
     }
 
     #top-nav-menu{
-        display:block;
+        display:none;
         width:100%;
         position:fixed;
         top:0; bottom:0; left:-768px; right: initial;
         left: 0;
         z-index:9999;
-        padding:70px 81px 0 81px;
+        padding:70px 81px 70px 81px;
         background-color: #ffffff;
         overflow: auto;
     }
@@ -582,7 +591,7 @@ footer{
     }
 
     #top-right #top-nav-menu .btn-black{
-        display: block;
+        display: inline-flex;
         margin: 0 auto;
         padding-left: 64px;
         padding-right: 64px;
