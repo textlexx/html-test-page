@@ -6,7 +6,7 @@ $(document).ready(function(){
     topMenu = jQuery('#header #top-nav-menu'),
     windowWidth = Number($(document).width());
 
-    if( windowWidth > 768 ) return false;
+    if( windowWidth > 769 ) return false;
     //---------------------------
 
     //---------------------------
