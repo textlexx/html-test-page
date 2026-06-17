@@ -167,11 +167,10 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    width:127px;
     height: 52px;
     line-height: 52px;
     border-radius: 8px;
-    padding:0;
+    padding:0 24px 0 24px;
     margin:0;
     font-size: 16px;
     background-color: #000000;
@@ -276,6 +275,7 @@ button.align1{
 .one-review{
     width: 404px;
     padding:31px 31px 34px 31px;
+    margin-bottom:36px;
     border-radius: 12px;
     box-shadow: -4px 8px 20px 0 rgba(0, 0, 0, 0.1);
 }
@@ -323,7 +323,8 @@ button.align1{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding:136px 0 0 0;
+    padding-top:136px;
+    padding-bottom:36px;
 }
 
 #contact-left{
@@ -412,6 +413,7 @@ input[type="submit"]{
 
 #contact-right .cnt-img{
     width: 508px;
+    margin-right: 4px;
 }
 
 /**********************/
@@ -425,7 +427,7 @@ footer{
     width:100%;
     justify-content: space-between;
     border-top:1px solid #E6E6E6;
-    margin-top:53px;
+    margin-top:17px;
     padding:49px 0 59px 0;
 }
 
